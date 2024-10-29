@@ -1,0 +1,152 @@
+/*
+================
+table of contents
+================
+1.left section buttons
+2.right section buttons
+
+================
+left section buttons
+================
+*/
+
+.left-section .buttons {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-section .buttons button {
+    /* width: 11rem; */
+    background-color: rgba(36, 37, 46, 1);
+    padding: .75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    opacity: .5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+}
+
+.left-section .buttons button:hover {
+    opacity: 1;
+}
+
+.left-section .buttons .active {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: .6px;
+    padding: .75rem 0;
+    border: 1px solid var(--blue);
+}
+
+.light .left-section .buttons .active {
+    border: 1px solid #000;
+}
+
+
+/* ================
+right section buttons
+================ */
+
+.card {
+    transition: .3s all;
+    border: 1px solid rgba(93, 138, 252, .3) !important;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+    background-color: transparent!important;
+    background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05))!important;
+}
+
+.card img {
+    height: 150px;
+}
+
+.light .card,
+.light .card:hover {
+    border: 1px solid darkorange !important;
+}
+
+.card:hover {
+    rotate: 1deg;
+    scale: 1.01rem;
+    cursor: pointer;
+}
+
+.card-title {
+    color: var(--title);
+    font-size: .8rem;
+}
+
+.card-text {
+    color: var(--subTitle);
+    font-size: .8rem;
+}
+
+.icon-link,
+.icon-github {
+    font-size: 1.2rem;
+    color: var(--subTitle);
+}
+
+.icon-link:hover,
+.icon-github:hover {
+    font-size: 1.4rem;
+    color: var(--icon-hover);
+    cursor: pointer;
+}
+
+
+/* 
+<div className="col-md-9 right-section">
+                    <div className="row">
+                        <AnimatePresence>
+                            {arr.map((project, idx) => {
+                                return (
+                                    //framer-motion
+                                    <motion.div
+                                        layout
+                                        initial={{ transform: "scale(0)" }}
+                                        animate={{ transform: "scale(1)" }}
+                                        transition={{ type: "spring", damping: 8, stiffness: 50 }}
+                                        key={idx}
+                                        className="col-lg-4 px-3 mt-3 rounded-3"
+                                    >
+                                        <div className="card">
+                                            <img
+                                                className="card-img-top w-100 "
+                                                src={project.imgPath}
+                                                alt=""
+                                            />
+
+                                            <div className="card-body my-2 ">
+                                                <h5 className="card-title my-2">
+                                                    {project.description}
+                                                </h5>
+                                                <p className="card-text mt-2 mb-4">{project.title}</p>
+                                                <div className=" d-flex justify-content-between">
+                                                    <div className="d-flex">
+                                                        {/* <a href=""><span className="icon-link mx-2"></span></a> */
+
+
+/* }
+<a href= {
+    project.href
+}
+target="_blank"><span className="icon-github"></span></a></div><a href= {
+    project.web
+}
+target="_blank" className="d-flex "><span>more</span><span className="icon-arrow-right align-self-end ms-1"></span></a></div></div></div></motion.div>);
+
+}
+)
+}
+</AnimatePresence></div></div>*/

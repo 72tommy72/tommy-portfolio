@@ -1,0 +1,67 @@
+/* 
+================
+    left section
+================
+ */
+
+.avatar {
+    /* position: relative;  */
+    width: 15%;
+    border: 1px solid darkorange;
+    padding: 1px;
+}
+
+.icon-verified {
+    position: absolute;
+    top: 80%;
+    right: 83%;
+    color: var(--blue);
+}
+
+h1 {
+    color: var(--title);
+}
+
+.title p {
+    color: var(--title);
+    /* font-size: smaller; */
+}
+
+.subtitle {
+    color: var(--subTitle);
+}
+
+.icon {
+    color: var(--subTitle);
+    margin: 0px 10px;
+    font: 1.2rem sans-serif;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+}
+
+.icons .icon-facebook {
+    margin: 0px 10px 0px 0px;
+}
+
+.icon:hover {
+    font: 1.4rem sans-serif;
+    cursor: pointer;
+    color: var(--icon-hover);
+}
+
+
+/* 
+================
+    right section
+================
+ */
+
+
+/* @media (max-width: 990px) {
+    .right-hero-animation {
+        display: none;
+    }
+} */

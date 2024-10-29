@@ -1,0 +1,185 @@
+/*
+================
+table of contents
+================
+1. Header design
+2. Button and icons
+3. model
+
+*/
+
+
+/* 
+================
+    Header design
+================
+ */
+
+ul {
+    gap: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title);
+    opacity: 0.9;
+    font-size: .88rem;
+    font-weight: 500;
+    transition: .2s all;
+    -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+    -ms-transition: .2s all;
+    -o-transition: .2s all;
+}
+
+a:hover {
+    color: var(--blue);
+    opacity: 1;
+    font-size: .9rem;
+}
+
+nav {
+    display: flex;
+    background-color: var(--bgHeader);
+    border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+    box-sizing: 1px 1px 40px #2323242a;
+}
+
+.menu {
+    display: none;
+}
+
+
+/* 
+================
+    Icons
+================
+ */
+
+header .moon-icon,
+header .menu {
+    background-color: var(--bgHeader);
+    color: var(--subTitle);
+    border: 1px solid rgba(244, 165, 96, .2);
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 1px 1px 40px rgba(35, 35, 36, .165);
+}
+
+header .icon-sun {
+    color: orange;
+}
+
+header .moon-icon:hover,
+header .menu:hover {
+    color: var(--title);
+    border: 1px solid rgb(244, 165, 96);
+    transition: .2 all;
+    -webkit-transition: .2 all;
+    -moz-transition: .2 all;
+    -ms-transition: .2 all;
+    -o-transition: .2 all;
+}
+
+
+/* header .menu :hover {
+        color: var(--title);
+        border: 1px solid rgb(244, 165, 96);
+        transition: .2s all;
+        -webkit-transition: .2s all;
+        -moz-transition: .2s all;
+        -ms-transition: .2s all;
+        -o-transition: .2s all;
+    } */
+
+button:active {
+    scale: .8;
+}
+
+header .close {
+    font-size: 1.5rem;
+    color: var(--title);
+    transition: .2s all;
+    -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+    -ms-transition: .2s all;
+    -o-transition: .2s all;
+}
+
+header .close:hover {
+    font-size: 1.7rem;
+    color: crimson;
+    rotate: 180deg;
+}
+
+
+/* 
+================
+    Model
+================
+ */
+
+.layer-model {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 55;
+    background-color: rgba(40, 40, 48, .9);
+    backdrop-filter: blur(4px);
+}
+
+.layer-model ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: var(--secondary);
+    /* animation: myMove .7s 1;
+    -webkit-animation: myMove .7s 1; */
+}
+
+.layer-model ul li {
+    border-bottom: 1px solid var(--border);
+    padding: .6rem 0;
+}
+
+.layer-model ul li:last-child {
+    border-bottom: none;
+}
+
+.layer-model ul li:first-child {
+    border-bottom: none;
+    text-align: right;
+    padding-top: .2rem;
+    padding-bottom: 0rem;
+}
+
+
+/* @media (width < 700px) {
+    .menu {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+} */
