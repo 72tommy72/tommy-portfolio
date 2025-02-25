@@ -62,13 +62,13 @@ export default function Hero() {
                                     <div className="icon icon-github "></div>
                                 </a>
                                 <a
-                                    href="https://www.linkedin.com/in/mohamed-hatem-9b370a318/"
+                                    href="https://www.linkedin.com/in/mohamed-hatem-661383346"
                                     target="blank"
                                 >
                                     <div className="icon icon-linkedin-square"></div>
                                 </a>
                                 <a
-                                    href="https://drive.google.com/file/d/1HGz3BVlfHtCpe22-x1x5OZIc-H3Ty6bJ/view?usp=drive_link"
+                                    href="https://drive.google.com/file/d/1XWp1_Yk2Pg_yQuEZvv87tlNF6RnwxrNV/view?usp=sharing"
                                     target="blank"
                                 >
                                     <FontAwesomeIcon className="icon " icon={faFile} />
