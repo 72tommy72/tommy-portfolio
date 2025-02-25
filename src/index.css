@@ -18,7 +18,7 @@ html {
     --border: rgba(63, 63, 70, 0.4);
     --title: rgb(244, 244, 245);
     --subTitle: rgb(161, 161, 170);
-    --bgHeader: #253745;
+    --bgHeader: rgb(37, 55, 69);
     --blue: rgb(93, 188, 252);
     --icon-hover: #d4d4d8
 }
