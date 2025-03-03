@@ -24,7 +24,7 @@ export default function Hero() {
                                     animate={{ transform: "scale(1)" }}
                                     transition={{ type: "spring", damping: 8, stiffness: 50 }}
                                     className="avatar rounded-circle "
-                                    src="../public/WhatsApp Image 2024-09-21 at 09.50.07_8b6fe70d-modified.png"
+                                    src="../../../public/WhatsApp Image 2024-09-21 at 09.50.07_8b6fe70d-modified.png"
                                     alt=""
                                 />
                                 <div className="icon-verified text-info "></div>
