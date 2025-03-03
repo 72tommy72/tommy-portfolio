@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos" ;
 import { useEffect } from "react";
+import WhatsApp from "../../../public/WhatsApp Image 2024-09-21 at 09.50.07_8b6fe70d-modified.png";
+
 export default function Hero() {
     useEffect(() => {
         AOS.init({ duration: 1500 });  // Initialize AOS and set duration if needed
@@ -24,7 +26,7 @@ export default function Hero() {
                                     animate={{ transform: "scale(1)" }}
                                     transition={{ type: "spring", damping: 8, stiffness: 50 }}
                                     className="avatar rounded-circle "
-                                    src="../../../public/WhatsApp Image 2024-09-21 at 09.50.07_8b6fe70d-modified.png"
+                                    src={WhatsApp}
                                     alt=""
                                 />
                                 <div className="icon-verified text-info "></div>
