@@ -49,28 +49,6 @@ const projects = [
         web: "https://cruds-by-js-css-html.netlify.app/",
     },
     {
-        imgPath: "../../../public/hero-bg.jpg",
-        title: "HTML & CSS",
-        description: "Simone-Olivia ",
-        href: "https://github.com/72tommy72/Simone-Olivia",
-        web: "https://simone-olivia.netlify.app/",
-    },
-    {
-        imgPath:
-            "../../../public/computer-engineer-typing-keyboard-writing-code-build-firewalls.jpg",
-        title: "HTML & CSS",
-        description: "Morgan-Freeman ",
-        href: "https://github.com/72tommy72/Morgan-Freeman",
-        web: "https://morgan-freeman.netlify.app/",
-    },
-    {
-        imgPath: "../../../public/slider-01.jpg",
-        title: "HTML & CSS",
-        description: "Fokir ",
-        href: "https://github.com/72tommy72/Fokir",
-        web: "https://fokir-27.netlify.app/",
-    },
-    {
         imgPath: "../../../public/gradient-sql-illustration_52683-80408.avif",
         title: "Node & Express",
         description: "SQL",
@@ -106,6 +84,28 @@ const projects = [
         description: "E-commerce",
         href: "https://github.com/72tommy72/e-commerce",
     },
+    /* {
+        imgPath: "../../../public/hero-bg.jpg",
+        title: "HTML & CSS",
+        description: "Simone-Olivia ",
+        href: "https://github.com/72tommy72/Simone-Olivia",
+        web: "https://simone-olivia.netlify.app/",
+    },
+    {
+        imgPath:
+            "../../../public/computer-engineer-typing-keyboard-writing-code-build-firewalls.jpg",
+        title: "HTML & CSS",
+        description: "Morgan-Freeman ",
+        href: "https://github.com/72tommy72/Morgan-Freeman",
+        web: "https://morgan-freeman.netlify.app/",
+    },
+    {
+        imgPath: "../../../public/slider-01.jpg",
+        title: "HTML & CSS",
+        description: "Fokir ",
+        href: "https://github.com/72tommy72/Fokir",
+        web: "https://fokir-27.netlify.app/",
+    }, */
 ];
 export default function Main() {
     const [active, setActive] = useState("all");
@@ -152,14 +152,14 @@ export default function Main() {
                         >
                             JavaScript
                         </button>
-                        <button
+                        {/* <button
                             onClick={() => {
                                 handelClick("HTML & CSS");
                             }}
                             className={active === "HTML & CSS" ? "active" : null}
                         >
                             HTML & CSS
-                        </button>
+                        </button> */}
                         <button
                             onClick={() => {
                                 handelClick("Node & Express");
