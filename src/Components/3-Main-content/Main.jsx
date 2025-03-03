@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import "./Main.css";
 import Aos from "aos";
 // import { AnimatePresence, motion } from "framer-motion";
-// import '../../app.js'
+// import 'app.js'
 
 const projects = [
 
     {
-        imgPath: "../../../public/digital-tablet-online-learning.jpg",
+        imgPath: "../public/digital-tablet-online-learning.jpg",
         title: "React",
         description: "Dashboard",
         href: "https://github.com/72tommy72/Dashboard-",
@@ -15,77 +15,77 @@ const projects = [
     },
     {
         imgPath:
-            "../../../public/teenage-girl-with-praying-peace-hope-dreams-concept.jpg",
+            "../public/teenage-girl-with-praying-peace-hope-dreams-concept.jpg",
         title: "React",
         description: "Prayer-times",
         href: "https://github.com/72tommy72/prayer-times",
         web: "https://t-prayer-times.netlify.app/",
     },
     {
-        imgPath: "../../../public/man-watching-streaming-service-his-tv.jpg",
+        imgPath: "../public/man-watching-streaming-service-his-tv.jpg",
         title: "React",
         description: "Noxe App",
         href: "https://github.com/72tommy72/Noxe-app",
         web: "https://noxe-react-app.netlify.app/",
     },
     {
-        imgPath: "../../../public/todo.png",
+        imgPath: "../public/todo.png",
         title: "JavaScript",
         description: "TO DO List FE",
         href: "https://github.com/72tommy72/To-DO-List-FE",
         web: "https://to-do-list-fe.netlify.app/",
     },
     // {
-    //     imgPath: "../../../public/    ",
+    //     imgPath: "../public/    ",
     //     title: "JavaScript",
     //     description: "Weather app ",
     //     href: "https://github.com/72tommy72/CRUD",
     // },
     {
-        imgPath: "../../../public/CRUDs.png     ",
+        imgPath: "../public/CRUDs.png     ",
         title: "JavaScript",
         description: "CRUDs",
         href: "https://github.com/72tommy72/CRUD",
         web: "https://cruds-by-js-css-html.netlify.app/",
     },
     {
-        imgPath: "../../../public/gradient-sql-illustration_52683-80408.avif",
+        imgPath: "../public/gradient-sql-illustration_52683-80408.avif",
         title: "Node & Express",
         description: "SQL",
         href: "https://github.com/72tommy72/SQL",
     },
     {
-        imgPath: "../../../public/sequelize.jpg",
+        imgPath: "../public/sequelize.jpg",
         title: "Node & Express",
         description: "Sequelize",
         href: "https://github.com/72tommy72/-sequelize-and-express",
     },
     {
-        imgPath: "../../../public/mongoose.png",
+        imgPath: "../public/mongoose.png",
         title: "Node & Express",
         description: "Mongoose",
         href: "https://github.com/72tommy72/mongoose-and-express",
     },
     {
-        imgPath: "../../../public/todo.png",
+        imgPath: "../public/todo.png",
         title: "Node & Express",
         description: "TODO LIST BC",
         href: "https://github.com/72tommy72/To-Do-BC",
     },
     {
-        imgPath: "../../../public/yusupjune47.jpg",
+        imgPath: "../public/yusupjune47.jpg",
         title: "Node & Express",
         description: "Detect anemia",
         href: "https://github.com/72tommy72/graduation-project",
     },
     {
-        imgPath: "../../../public/39225770.jpg",
+        imgPath: "../public/39225770.jpg",
         title: "Node & Express",
         description: "E-commerce",
         href: "https://github.com/72tommy72/e-commerce",
     },
     /* {
-        imgPath: "../../../public/hero-bg.jpg",
+        imgPath: "../public/hero-bg.jpg",
         title: "HTML & CSS",
         description: "Simone-Olivia ",
         href: "https://github.com/72tommy72/Simone-Olivia",
@@ -93,14 +93,14 @@ const projects = [
     },
     {
         imgPath:
-            "../../../public/computer-engineer-typing-keyboard-writing-code-build-firewalls.jpg",
+            "../public/computer-engineer-typing-keyboard-writing-code-build-firewalls.jpg",
         title: "HTML & CSS",
         description: "Morgan-Freeman ",
         href: "https://github.com/72tommy72/Morgan-Freeman",
         web: "https://morgan-freeman.netlify.app/",
     },
     {
-        imgPath: "../../../public/slider-01.jpg",
+        imgPath: "../public/slider-01.jpg",
         title: "HTML & CSS",
         description: "Fokir ",
         href: "https://github.com/72tommy72/Fokir",
