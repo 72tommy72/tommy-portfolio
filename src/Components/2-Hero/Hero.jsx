@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import { useEffect } from "react";
-
+// import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 export default function Hero() {
     useEffect(() => {
         AOS.init({ duration: 1500 });
@@ -43,16 +44,19 @@ export default function Hero() {
                                     with a strong focus on high-performance applications and
                                     excellent user experience. Throughout my studies, I worked on
                                     several personal projects that helped enhance my coding skills
-                                    and problem-solving abilities. I am eager to join an innovative
-                                    team where I can contribute to exceptional projects and further
-                                    develop my technical skills.
+                                    and problem-solving abilities. I am eager to join an
+                                    innovative team where I can contribute to exceptional projects
+                                    and further develop my technical skills.
                                 </p>
                             </div>
                             <div className="icons d-flex text-white">
                                 <a href="https://www.facebook.com/72tommy" target="blank">
                                     <div className="icon icon-facebook"></div>
                                 </a>
-                                <a href="https://www.instagram.com/_mohamedhatemm" target="blank">
+                                <a
+                                    href="https://www.instagram.com/_mohamedhatemm"
+                                    target="blank"
+                                >
                                     <div className="icon icon-instagram"></div>
                                 </a>
                                 <a
@@ -72,6 +76,11 @@ export default function Hero() {
                                     target="blank"
                                 >
                                     <FontAwesomeIcon className="icon" icon={faFile} />
+                                </a>
+                                <a href="https://wa.me/+0201556664949" target="blank">
+                                    <FontAwesomeIcon className="icon" 
+// @ts-ignore
+                                    icon={faWhatsapp} />
                                 </a>
                             </div>
                         </div>
