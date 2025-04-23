@@ -66,8 +66,47 @@ right section buttons
     background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05))!important;
 }
 
+.image-container {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(37, 55, 69, 0.1) 0%, rgba(37, 55, 69, 0.2) 50%, rgba(37, 55, 69, 0.1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(93, 138, 252, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--blue);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .card img {
     height: 150px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card img.loaded {
+    opacity: 1;
 }
 
 .light .card,
@@ -148,5 +187,4 @@ target="_blank" className="d-flex "><span>more</span><span className="icon-arrow
 
 }
 )
-}
-</AnimatePresence></div></div>*/
+}</AnimatePresence></div></div>*/

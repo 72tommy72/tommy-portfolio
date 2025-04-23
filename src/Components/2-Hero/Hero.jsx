@@ -4,36 +4,34 @@ import developerAnimation from "../../../public/animation/Animation - 1727177595
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
-import AOS from "aos" ;
+import AOS from "aos";
 import { useEffect } from "react";
-import WhatsApp from "../../../public/WhatsApp Image 2024-09-21 at 09.50.07_8b6fe70d-modified.png";
 
 export default function Hero() {
     useEffect(() => {
-        AOS.init({ duration: 1500 });  // Initialize AOS and set duration if needed
+        AOS.init({ duration: 1500 });
     }, []);
+
     return (
         <>
-            <section className="hero mt-5 ">
+            <section className="hero mt-5">
                 <div className="row">
-                    <div className=" col-md-7 ">
+                    <div className="col-md-7">
                         <div data-aos="fade-right">
-                            <div className="left-section d-flex position-relative ">
-                                {/* <img className="avatar rounded-circle " src="../../../public/tommy 2 - Copy (2)-modified.png" alt="" /> */}
+                            <div className="left-section d-flex position-relative">
                                 <motion.img
                                     layout
                                     initial={{ transform: "scale(0)" }}
                                     animate={{ transform: "scale(1)" }}
                                     transition={{ type: "spring", damping: 8, stiffness: 50 }}
-                                    className="avatar rounded-circle "
-                                    src={WhatsApp}
-                                    alt=""
+                                    className="avatar rounded-circle"
+                                    src="../../../public/WhatsApp Image 2024-09-21 at 09.50.07_8b6fe70d-modified.png"
+                                    alt="Mohamed Hatem - MERN Stack Developer"
                                 />
-                                <div className="icon-verified text-info "></div>
+                                <div className="icon-verified text-info"></div>
                             </div>
                             <div className="title mt-2">
-                                <h1>Mohamed Hatem </h1>
-                                {/* <h5 className=" mt-2"> <h5/> */}
+                                <h1>Mohamed Hatem</h1>
                                 <p className="mt-2">MERN STACK DEVELOPER</p>
                             </div>
                             <div className="subtitle my-3">
@@ -61,7 +59,7 @@ export default function Hero() {
                                     href="https://github.com/72tommy72?tab=repositories"
                                     target="blank"
                                 >
-                                    <div className="icon icon-github "></div>
+                                    <div className="icon icon-github"></div>
                                 </a>
                                 <a
                                     href="https://www.linkedin.com/in/mohamed-hatem-661383346"
@@ -73,22 +71,20 @@ export default function Hero() {
                                     href="https://drive.google.com/file/d/1XWp1_Yk2Pg_yQuEZvv87tlNF6RnwxrNV/view?usp=sharing"
                                     target="blank"
                                 >
-                                    <FontAwesomeIcon className="icon " icon={faFile} />
-                                    {/* <div className="icon icon-linkedin-square"></div> */}
+                                    <FontAwesomeIcon className="icon" icon={faFile} />
                                 </a>
                             </div>
                         </div>
                     </div>
-                        <div className=" col-md-5 ">
-                            <div data-aos="fade-left">
-                                <div className="right-hero-animation">
-                                    {/* https://lottiereact.com/ */}
-                                    <div className="">
-                                        <Lottie animationData={developerAnimation} />
-                                    </div>
+                    <div className="col-md-5">
+                        <div data-aos="fade-left">
+                            <div className="right-hero-animation">
+                                <div className="">
+                                    <Lottie animationData={developerAnimation} />
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </section>
         </>

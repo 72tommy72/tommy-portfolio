@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="col-lg-6">
         <div className="content ">
-          <p>© 2024 Spencer Sharp. All rights reserved.</p>
+          <p>© 2022 Spencer Sharp. All rights reserved.</p>
         </div>
       </div>
     </div>

@@ -1,329 +1,154 @@
-// import { useEffect, useState } from "react";
-// import "./Main.css";
-// import Aos from "aos";
-// // import { AnimatePresence, motion } from "framer-motion";
-// // import '../../app.js'
-
-// const projects = [
-
-//     {
-//         imgPath: "../../../public/digital-tablet-online-learning.jpg",
-//         title: "React",
-//         description: "Dashboard",
-//         href: "https://github.com/72tommy72/Dashboard-",
-//         web: "https://dashboard-react-matrialui.netlify.app/",
-//     },
-//     {
-//         imgPath:
-//             "../../../public/teenage-girl-with-praying-peace-hope-dreams-concept.jpg",
-//         title: "React",
-//         description: "Prayer-times",
-//         href: "https://github.com/72tommy72/prayer-times",
-//         web: "https://t-prayer-times.netlify.app/",
-//     },
-//     {
-//         imgPath: "../../../public/man-watching-streaming-service-his-tv.jpg",
-//         title: "React",
-//         description: "Noxe App",
-//         href: "https://github.com/72tommy72/Noxe-app",
-//         web: "https://noxe-react-app.netlify.app/",
-//     },
-//     {
-//         imgPath: "../../../public/todo.png",
-//         title: "JavaScript",
-//         description: "TO DO List FE",
-//         href: "https://github.com/72tommy72/To-DO-List-FE",
-//         web: "https://to-do-list-fe.netlify.app/",
-//     },
-//     // {
-//     //     imgPath: "../../../public/    ",
-//     //     title: "JavaScript",
-//     //     description: "Weather app ",
-//     //     href: "https://github.com/72tommy72/CRUD",
-//     // },
-//     {
-//         imgPath: "../../../public/CRUDs.png     ",
-//         title: "JavaScript",
-//         description: "CRUDs",
-//         href: "https://github.com/72tommy72/CRUD",
-//         web: "https://cruds-by-js-css-html.netlify.app/",
-//     },
-//     {
-//         imgPath: "../../../public/gradient-sql-illustration_52683-80408.avif",
-//         title: "Node & Express",
-//         description: "SQL",
-//         href: "https://github.com/72tommy72/SQL",
-//     },
-//     {
-//         imgPath: "../../../public/sequelize.jpg",
-//         title: "Node & Express",
-//         description: "Sequelize",
-//         href: "https://github.com/72tommy72/-sequelize-and-express",
-//     },
-//     {
-//         imgPath: "../../../public/mongoose.png",
-//         title: "Node & Express",
-//         description: "Mongoose",
-//         href: "https://github.com/72tommy72/mongoose-and-express",
-//     },
-//     {
-//         imgPath: "../../../public/todo.png",
-//         title: "Node & Express",
-//         description: "TODO LIST BC",
-//         href: "https://github.com/72tommy72/To-Do-BC",
-//     },
-//     {
-//         imgPath: "../../../public/yusupjune47.jpg",
-//         title: "Node & Express",
-//         description: "Detect anemia",
-//         href: "https://github.com/72tommy72/graduation-project",
-//     },
-//     {
-//         imgPath: "../../../public/39225770.jpg",
-//         title: "Node & Express",
-//         description: "E-commerce",
-//         href: "https://github.com/72tommy72/e-commerce",
-//     },
-//     /* {
-//         imgPath: "../../../public/hero-bg.jpg",
-//         title: "HTML & CSS",
-//         description: "Simone-Olivia ",
-//         href: "https://github.com/72tommy72/Simone-Olivia",
-//         web: "https://simone-olivia.netlify.app/",
-//     },
-//     {
-//         imgPath:
-//             "../../../public/computer-engineer-typing-keyboard-writing-code-build-firewalls.jpg",
-//         title: "HTML & CSS",
-//         description: "Morgan-Freeman ",
-//         href: "https://github.com/72tommy72/Morgan-Freeman",
-//         web: "https://morgan-freeman.netlify.app/",
-//     },
-//     {
-//         imgPath: "../../../public/slider-01.jpg",
-//         title: "HTML & CSS",
-//         description: "Fokir ",
-//         href: "https://github.com/72tommy72/Fokir",
-//         web: "https://fokir-27.netlify.app/",
-//     }, */
-// ];
-// export default function Main() {
-//     const [active, setActive] = useState("all");
-//     const [arr, setArr] = useState(projects);
-//     const handelClick = (buttonTitle) => {
-//         setActive(buttonTitle);
-//         const newArr = projects.filter((item) => {
-//             return item.title === buttonTitle;
-//         });
-//         setArr(newArr);
-//     };
-//     useEffect(() => {
-//         Aos.init({ duration: 1500 });  // Initialize AOS and set duration if needed
-//     }, []);
-//     return (
-//         <>
-//             <div className="row ">
-//                 <div className="left-section col-md-3 ">
-//                     <div className="buttons  d-flex">
-//                         <button
-//                             onClick={() => {
-//                                 setActive("all");
-//                                 setArr(projects);
-//                             }}
-//                             className={active === "all" ? "active" : null}
-//                         >
-//                             All Projects
-//                         </button>
-
-
-//                         <button
-//                             onClick={() => {
-//                                 handelClick("React");
-//                             }}
-//                             className={active === "React" ? "active" : null}
-//                         >
-//                             React
-//                         </button>
-//                         <button
-//                             onClick={() => {
-//                                 handelClick("JavaScript");
-//                             }}
-//                             className={active === "JavaScript" ? "active" : null}
-//                         >
-//                             JavaScript
-//                         </button>
-//                         {/* <button
-//                             onClick={() => {
-//                                 handelClick("HTML & CSS");
-//                             }}
-//                             className={active === "HTML & CSS" ? "active" : null}
-//                         >
-//                             HTML & CSS
-//                         </button> */}
-//                         <button
-//                             onClick={() => {
-//                                 handelClick("Node & Express");
-//                             }}
-//                             className={active === "Node & Express" ? "active" : null}
-//                         >
-//                             Node & Express
-//                         </button>
-//                     </div>
-//                 </div>
-//                 <div className="col-md-9 right-section">
-//                     <div className="row">
-//                         {arr.map((project, idx) => {
-//                             return (
-//                                 //framer-motion
-//                                 <div key={idx} className="col-lg-4 px-3 mt-3 rounded-3">
-//                                     <div data-aos="zoom-in-up">
-//                                         <div className="card">
-//                                             <img
-//                                                 className="card-img-top w-100 "
-//                                                 src={project.imgPath}
-//                                                 alt=""
-//                                             />
-//                                             <div className="card-body my-2 ">
-//                                                 <h5 className="card-title my-2">
-//                                                     {project.description}
-//                                                 </h5>
-//                                                 <p className="card-text mt-2 mb-4">{project.title}</p>
-//                                                 <div className=" d-flex justify-content-between">
-//                                                     <div className="d-flex">
-//                                                         {/* <a href=""><span className="icon-link mx-2"></span></a> */}
-//                                                         <a href={project.href} target="_blank">
-//                                                             <span className="icon-github"></span>
-//                                                         </a>
-//                                                     </div>
-//                                                     <a
-//                                                         href={project.web}
-//                                                         target="_blank"
-//                                                         className="d-flex "
-//                                                     >
-//                                                         {project.title === "Node & Express" ? (
-//                                                             <></>
-//                                                         ) : (
-//                                                             <>
-//                                                                 <span>more</span>
-//                                                                 <span className="icon-arrow-right align-self-end ms-1"></span>
-//                                                             </>
-//                                                         )}
-//                                                     </a>
-//                                                 </div>
-//                                             </div>
-//                                         </div>
-//                                     </div>
-//                                 </div>
-//                             );
-//                         })}
-//                     </div>
-//                 </div>
-//             </div>
-//         </>
-//     );
-// }
 import { useEffect, useState } from "react";
 import "./Main.css";
 import Aos from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
-import digitalTablet from "../../../public/digital-tablet-online-learning.jpg";
-import prayingGirl from "../../../public/teenage-girl-with-praying-peace-hope-dreams-concept.jpg";
-import manWatchingTV from "../../../public/man-watching-streaming-service-his-tv.jpg";
-import todoImage from "../../../public/todo.png";
-import crudsImage from "../../../public/CRUDs.png";
-import sqlImage from "../../../public/gradient-sql-illustration_52683-80408.avif";
-import sequelizeImage from "../../../public/sequelize.jpg";
-import mongooseImage from "../../../public/mongoose.png";
-import anemiaImage from "../../../public/yusupjune47.jpg";
-import ecommerceImage from "../../../public/39225770.jpg";
-
 const projects = [
     {
-        imgPath: digitalTablet,
-        title: "React",
-        description: "Dashboard",
-        href: "https://github.com/72tommy72/Dashboard-",
-        web: "https://dashboard-react-matrialui.netlify.app/",
+        name: "Simone-Olivia",
+        imgPath: "/computer-engineer-typing-keyboard-writing-code-build-firewalls.jpg",
+        tech: "UI/UX",
+        description: "Professional portfolio website with modern design and smooth user experience",
+        href: "https://github.com/72tommy72/Simone-Olivia",
+        web: "https://simone-olivia.netlify.app/",
     },
     {
-        imgPath: prayingGirl,
-        title: "React",
-        description: "Prayer-times",
-        href: "https://github.com/72tommy72/prayer-times",
-        web: "https://t-prayer-times.netlify.app/",
+        name: "Fokir",
+        imgPath: "/slider-01.jpg",
+        tech: "UI/UX",
+        description: "Interactive portfolio with dynamic effects and engaging design",
+        href: "https://github.com/72tommy72/Fokir",
+        web: "https://fokir-27.netlify.app/",
     },
     {
-        imgPath: manWatchingTV,
-        title: "React",
-        description: "Noxe App",
-        href: "https://github.com/72tommy72/Noxe-app",
-        web: "https://noxe-react-app.netlify.app/",
+        name: "Morgan-Freeman",
+        imgPath: "/hero-bg.jpg",
+        tech: "UI/UX",
+        description: "Professional portfolio featuring work gallery and interactive resume",
+        href: "https://github.com/72tommy72/Morgan-Freeman",
+        web: "https://morgan-freeman.netlify.app/",
     },
     {
-        imgPath: todoImage,
-        title: "JavaScript",
-        description: "TO DO List FE",
+        name: "To-DO-List-FE",
+        imgPath: "/todo.png",
+        tech: "Vanilla JS",
+        description: "Task management app with add, delete, and edit functionality",
         href: "https://github.com/72tommy72/To-DO-List-FE",
         web: "https://to-do-list-fe.netlify.app/",
     },
     {
-        imgPath: crudsImage,
-        title: "JavaScript",
-        description: "CRUDs",
+        name: "CRUD",
+        imgPath: "/CRUDs.png",
+        tech: "Vanilla JS",
+        description: "Data management application with Create, Read, Update, and Delete operations",
         href: "https://github.com/72tommy72/CRUD",
         web: "https://cruds-by-js-css-html.netlify.app/",
     },
     {
-        imgPath: sqlImage,
-        title: "Node & Express",
-        description: "SQL",
-        href: "https://github.com/72tommy72/SQL",
+        name: "Weather-app",
+        imgPath: "/ps_weather icons __ Behance.jpeg",
+        tech: "React.js",
+        description: "Weather application showing current conditions and forecasts",
+        href: "https://github.com/72tommy72/Weather-app",
+        web: "https://weather-app-aapi.netlify.app/",
     },
     {
-        imgPath: sequelizeImage,
-        title: "Node & Express",
-        description: "Sequelize",
-        href: "https://github.com/72tommy72/-sequelize-and-express",
+        name: "Noxe-app",
+        imgPath: "/man-watching-streaming-service-his-tv.jpg",
+        tech: "React.js",
+        description: "Movie and TV show platform with advanced user interface",
+        href: "https://github.com/72tommy72/Noxe-app",
+        web: "https://noxe-react-app.netlify.app/",
     },
     {
-        imgPath: mongooseImage,
-        title: "Node & Express",
-        description: "Mongoose",
-        href: "https://github.com/72tommy72/mongoose-and-express",
+        name: "Dashboard",
+        imgPath: "/digital-tablet-online-learning.jpg",
+        tech: "React.js",
+        description: "React.js & Material UI to make comprehensive admin dashboard with charts and statistics",
+        href: "https://github.com/72tommy72/Dashboard-",
+        web: "https://dashboard-react-matrialui.netlify.app/",
     },
     {
-        imgPath: todoImage,
-        title: "Node & Express",
-        description: "TODO LIST BC",
+        name: "Prayer times",
+        imgPath: "/teenage-girl-with-praying-peace-hope-dreams-concept.jpg",
+        tech: "React.js",
+        description: "Prayer times application with notifications and advanced settings",
+        href: "https://github.com/72tommy72/prayer-times",
+        web: "https://t-prayer-times.netlify.app/",
+    },
+    
+    {
+        name: "To-DO-List-BE",
+        imgPath: "/todo.png",
+        tech: "Node.js",
+        description: "Backend for todo list application with complete API",
         href: "https://github.com/72tommy72/To-Do-BC",
     },
     {
-        imgPath: anemiaImage,
-        title: "Node & Express",
-        description: "Detect anemia",
+        name: "Anemia detection (Graduation project)",
+        imgPath: "/yusupjune47.jpg",
+        tech: "Node.js",
+        description: "Anemia detection system using artificial intelligence",
         href: "https://github.com/72tommy72/graduation-project",
     },
     {
-        imgPath: ecommerceImage,
-        title: "Node & Express",
-        description: "E-commerce",
+        name: "E-commerce ",
+        imgPath: "/39225770.jpg",
+        tech: "Node.js",
+        description: "Complete e-commerce platform with payment and product management",
         href: "https://github.com/72tommy72/e-commerce",
+    },
+    {
+        name: "Task",
+        imgPath: "/gradient-sql-illustration_52683-80408.avif",
+        tech: "Node.js ",
+        description: "Backend application for relational database management with SQL",
+        href: "https://github.com/72tommy72/SQL",
+    },
+    {
+        name: "Market",
+        imgPath: "/sequelize.jpg",
+        tech: "Node.js",
+        description: "Database management system using Sequelize ORM",
+        href: "https://github.com/72tommy72/-sequelize-and-express",
+    },
+    {
+        name: "Saraha",
+        imgPath: "/mongoose.png",
+        tech: "Node.js",
+        description: "Backend application using MongoDB with Mongoose",
+        href: "https://github.com/72tommy72/mongoose-and-express",
+    },
+    {
+        name: "Task",
+        imgPath: "/Task.png",
+        tech: "MERN Stack",
+        description: "Full-stack task management app with advanced UI and backend services",
+        href: "https://github.com/72tommy72/task",
+        web: "https://jupiter-task.netlify.app/",   
     },
 ];
 
 export default function Main() {
     const [active, setActive] = useState("all");
     const [arr, setArr] = useState(projects);
+    const [loadedImages, setLoadedImages] = useState({});
 
     const handleClick = (buttonTitle) => {
         setActive(buttonTitle);
         if (buttonTitle === "all") {
             setArr(projects);
         } else {
-            const newArr = projects.filter((item) => item.title === buttonTitle);
+            const newArr = projects.filter((item) => item.tech === buttonTitle);
             setArr(newArr);
         }
+    };
+
+    const handleImageLoad = (imgPath) => {
+        setLoadedImages(prev => ({
+            ...prev,
+            [imgPath]: true
+        }));
     };
 
     useEffect(() => {
@@ -341,22 +166,34 @@ export default function Main() {
                         All Projects
                     </button>
                     <button
-                        onClick={() => handleClick("React")}
-                        className={active === "React" ? "active" : ""}
+                        onClick={() => handleClick("UI/UX")}
+                        className={active === "UI/UX" ? "active" : ""}
                     >
-                        React
+                        UI/UX
                     </button>
                     <button
-                        onClick={() => handleClick("JavaScript")}
-                        className={active === "JavaScript" ? "active" : ""}
+                        onClick={() => handleClick("Vanilla JS")}
+                        className={active === "Vanilla JS" ? "active" : ""}
                     >
-                        JavaScript
+                        Vanilla JS
                     </button>
                     <button
-                        onClick={() => handleClick("Node & Express")}
-                        className={active === "Node & Express" ? "active" : ""}
+                        onClick={() => handleClick("React.js")}
+                        className={active === "React.js" ? "active" : ""}
                     >
-                        Node & Express
+                        React.js
+                    </button>
+                    <button
+                        onClick={() => handleClick("Node.js")}
+                        className={active === "Node.js" ? "active" : ""}
+                    >
+                        Node.js
+                    </button>
+                    <button
+                        onClick={() => handleClick("MERN Stack")}
+                        className={active === "MERN Stack" ? "active" : ""}
+                    >
+                        MERN Stack
                     </button>
                 </div>
             </div>
@@ -366,14 +203,23 @@ export default function Main() {
                         <div key={idx} className="col-lg-4 px-3 mt-3 rounded-3">
                             <div data-aos="zoom-in-up">
                                 <div className="card">
-                                    <img
-                                        className="card-img-top w-100"
-                                        src={project.imgPath}
-                                        alt={project.description}
-                                    />
+                                    <div className="image-container">
+                                        {!loadedImages[project.imgPath] && (
+                                            <div className="image-placeholder">
+                                                <div className="spinner"></div>
+                                            </div>
+                                        )}
+                                        <img
+                                            className={`card-img-top w-100 ${loadedImages[project.imgPath] ? 'loaded' : ''}`}
+                                            src={project.imgPath}
+                                            alt={project.description}
+                                            onLoad={() => handleImageLoad(project.imgPath)}
+                                        />
+                                    </div>
                                     <div className="card-body my-2">
-                                        <h5 className="card-title my-2">{project.description}</h5>
-                                        <p className="card-text mt-2 mb-4">{project.title}</p>
+                                        <h5 className="card-title">{project.name}</h5>
+                                        <p className="card-text mt-2 mb-2">{project.description}</p>
+                                        <h5 className="card-title my-4">{project.tech}</h5>
                                         <div className="d-flex justify-content-between">
                                             <div className="d-flex">
                                                 <a href={project.href} target="_blank" rel="noopener noreferrer">
@@ -385,9 +231,9 @@ export default function Main() {
                                                     href={project.web}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="d-flex"
+                                                    className="d-flex align-items-center justify-content-center"
                                                 >
-                                                    <span>more</span>
+                                                    <span className="mt-1">more</span>
                                                     <span className="icon-arrow-right align-self-end ms-1"></span>
                                                 </a>
                                             )}
