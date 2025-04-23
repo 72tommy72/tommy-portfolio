@@ -56,6 +56,7 @@ right section buttons
 ================ */
 
 .card {
+    height: 360px;
     transition: .3s all;
     border: 1px solid rgba(93, 138, 252, .3) !important;
     -webkit-transition: .3s all;
