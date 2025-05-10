@@ -72,7 +72,7 @@ export default function Hero() {
                                     <div className="icon icon-linkedin-square"></div>
                                 </a>
                                 <a
-                                    href="https://drive.google.com/file/d/1XWp1_Yk2Pg_yQuEZvv87tlNF6RnwxrNV/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1nOiaQeTSjptfjFCxcYZzN9wPofgBQuGG/view?usp=drive_link"
                                     target="blank"
                                 >
                                     <FontAwesomeIcon className="icon" icon={faFile} />
